@@ -1,0 +1,15 @@
+const footerStyle = {
+    footer: {
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        height: "100px",
+        backgroundColor: "rgb(49, 52, 54)",
+    },
+
+    p: {
+        color: "rgb(255, 255, 255)",
+    },
+};
+
+export default footerStyle;
