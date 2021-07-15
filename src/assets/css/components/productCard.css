@@ -1,0 +1,11 @@
+.productCard {
+    background-color: white;
+    max-width: 250px;
+
+    margin: 50px;
+}
+
+.productCard__img {
+    margin-top: 12.5px;
+    width: 225px;
+}

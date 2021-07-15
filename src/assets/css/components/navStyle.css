@@ -1,17 +1,21 @@
-nav {
+.nav {
+    background-color: white;
+
+    padding-top: 10px;
+
     height: 65px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-ul {
+.nav__ul {
     width: 100%;
     padding: 0;
     display: flex;
 }
 
-ul li {
+.nav__ul li {
     display: inline;
     box-sizing: border-box;
     min-width: 100px;
@@ -21,27 +25,21 @@ ul li {
     margin: 12.5px;
 }
 
-a {
+.nav__ul a {
     color: black;
     text-decoration: none;
 }
 
-a:hover {
+.nav__ul a:hover {
     color: rgb(14, 186, 197);
 
 }
 
-ul li:first-child {
-    font-size: 100%;
-    color: rgb(14, 186, 197);
-}
-
-ul li:first-child a {
+.nav__ul li:first-child a {
     font-size: 120%;
     color: rgb(14, 186, 197);
 }
 
-
-ul li:last-child {
+.nav__ul li:last-child {
     margin-right: auto;
 }

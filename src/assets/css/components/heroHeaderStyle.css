@@ -1,0 +1,47 @@
+.heroHeader {
+    background-color: rgb(249, 88, 59);
+    min-width: 100%;
+    max-width: 1280px;
+
+    min-height: 400px;
+}
+
+.heroHeader__title {
+    font-size: 200%;
+    color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+}
+
+.heroHeader__search-bar {
+    border-radius: 24px;
+    border-style: solid;
+    border-color: white;
+
+    margin-top: 20px;
+    margin-bottom: 35px;
+
+    width: 60%;
+    height: 30px;
+}
+
+.heroHeader__search-bar, input::placeholder {
+    text-align: center;
+}
+
+.heroHeader__search-button {
+    margin: 0px auto;
+    display:block;
+
+    background-color: rgb(255, 200, 13);
+    border-color: rgb(255, 200, 10);
+    border-style: solid;
+    border-radius: 24px;
+
+    color: rgb(0, 0, 0);
+    padding: 8px 30px 8px 30px;
+    text-align: center;
+    text-decoration: none;
+
+    height: 80%;
+    width: 150px;
+}

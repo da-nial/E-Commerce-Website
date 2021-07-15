@@ -1,0 +1,33 @@
+.sortBox {
+    display: flex;
+    height: 50px;
+    background-color: white;
+    margin: 20px;
+
+    align-items: center
+}
+
+.sortBox__header {
+    font-weight: normal;
+    margin-right: 10px;
+}
+
+.sortBox__ul {
+    list-style-type: none;
+}
+
+.sortBox__ul li {
+    display: inline;
+    margin-inline: 15px;
+}
+
+.sortBox__ul button {
+    background-color: rgb(6, 156, 245);
+    border-color: rgb(6, 156, 245);
+    border-style: solid;
+    border-radius: 24px;
+
+
+    color: white;
+    box-shadow: 0 0 3px 3px rgb(169, 223, 252);
+}

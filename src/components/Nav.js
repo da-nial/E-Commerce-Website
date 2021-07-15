@@ -1,9 +1,14 @@
 import React from 'react';
 
-function Header(props) {
+import LoginRegister from "./LoginRegister";
+
+import "../assets/css/components/navStyle.css"
+
+function Nav(props) {
     return (
-        <nav>
-            <ul>
+
+        <nav className="nav">
+            <ul className="nav__ul">
                 <li>
                     <a href="/"> فروشگاه </a>
                 </li>
@@ -25,11 +30,11 @@ function Header(props) {
                 </li>
 
                 <li>
-                    <a href="/support"> ورود/ ثبت نام </a>
+                    <LoginRegister/>
                 </li>
             </ul>
         </nav>
     );
 }
 
-export default Header;
+export default Nav;
