@@ -1,21 +1,17 @@
-.categoryBox {
+.priceBox {
     background-color: white;
-    margin: 0px 10px;
 
+    margin: 0 10px;
     border-radius: 5px;
 }
 
-.categoryBox__form {
-    margin-top: 0;
-    display: inline;
-}
-
-.categoryBox__title {
+.priceBox__title {
     text-align: right;
     margin-right: 20px;
 }
 
-.categoryBox__divider {
+
+.priceBox__divider {
     border: 0;
     height: 2px;
     margin: 18px 0;
@@ -23,18 +19,10 @@
 }
 
 
-.categoryBox__divider:before {
+.priceBox__divider:before {
     content: "";
     display: block;
     border-top: solid 1px rgb(232, 232, 232);
     width: 100%;
     height: 2px;
 }
-
-.categoryBox__ul {
-    list-style-type: none;
-    text-align: right;
-    margin-right: 0;
-    margin-left: auto;
-}
-

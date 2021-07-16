@@ -1,6 +1,8 @@
 .heroHeader {
     background-color: rgb(249, 88, 59);
-    min-width: 100%;
+
+    grid-column: 1 / 5;
+
     max-width: 1280px;
 
     min-height: 400px;
@@ -30,7 +32,7 @@
 
 .heroHeader__search-button {
     margin: 0px auto;
-    display:block;
+    display: block;
 
     background-color: rgb(255, 200, 13);
     border-color: rgb(255, 200, 10);
@@ -39,9 +41,11 @@
 
     color: rgb(0, 0, 0);
     padding: 8px 30px 8px 30px;
-    text-align: center;
-    text-decoration: none;
 
-    height: 80%;
     width: 150px;
+}
+
+.heroHeader__img {
+    margin-top: 100px;
+    margin-bottom: 0;
 }

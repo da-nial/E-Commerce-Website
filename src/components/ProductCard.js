@@ -9,12 +9,20 @@ function ProductCard(props) {
     return (
         <div className="productCard">
             <img className="productCard__img" src={sampleProductImg}/>
-            <h5> موس گیمینگ ریزر</h5>
-            <h6>دسته‌بندی ۱</h6>
-            <hr/>
+            <h3 className="productCard__title"> موس گیمینگ ریزر</h3>
+            <h4 className="productCard__category">دسته‌بندی ۱</h4>
 
-            ۱۰.۰۰۰ تومان
-            خرید محصول
+            <hr className="productCard__divider"/>
+
+            <span className="productCard__span">
+                <p className="productCard__price">
+                    ۱۰.۰۰۰ تومان
+                </p>
+
+                <button>
+                    خرید محصول
+                </button>
+            </span>
         </div>
 
     );

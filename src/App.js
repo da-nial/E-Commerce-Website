@@ -3,19 +3,17 @@ import './App.css';
 
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
-import HeroHeader from "./components/HeroHeader";
-import SortBox from "./components/SortBox";
-import CategoryBox from "./components/CategoryBox";
-import ProductCard from "./components/ProductCard";
+import MainScreen from "./screens/MainScreen";
+import RegisterScreen from "./screens/RegisterScreen";
+import UserProfileScreen from "./screens/UserProfileScreen";
 
 function App() {
     return (
         <div className="App">
             <Nav/>
-            <HeroHeader/>
-            <SortBox/>
-            <CategoryBox/>
-            <ProductCard/>
+            {/*<MainScreen/>*/}
+            {/*<RegisterScreen/>*/}
+            <UserProfileScreen/>
             <Footer/>
         </div>
     );

@@ -1,10 +1,16 @@
 .sortBox {
-    display: flex;
+    grid-column: 1 / 5;
+
     height: 50px;
     background-color: white;
-    margin: 20px;
 
-    align-items: center
+    padding: 0 5px;
+    margin: 0 5px;
+
+
+    display: flex;
+    align-items: center; /* Vertically center items */
+    border-radius: 5px;
 }
 
 .sortBox__header {
@@ -26,6 +32,8 @@
     border-color: rgb(6, 156, 245);
     border-style: solid;
     border-radius: 24px;
+
+    padding: 5px 10px;
 
 
     color: white;
