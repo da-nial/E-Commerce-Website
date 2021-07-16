@@ -1,0 +1,95 @@
+.userProfileScreen {
+    height: 80vh;
+
+    background-color: rgb(247, 247, 247);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.userProfileScreen__title {
+    margin-bottom: 30px;
+}
+
+.userProfileScreen__tab {
+    margin-bottom: 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+
+    background-color: inherit;
+    width: 350px;
+    height: 40px;
+    border-radius: 50px;
+    border-color: rgb(238, 238, 238);
+    border-style: solid;
+}
+
+
+button {
+    flex-grow: 1;
+    background-color: transparent;
+    border: none;
+    margin: 0;
+}
+
+.button2 {
+    background-color: rgb(238, 238, 238);
+}
+
+.userProfileScreen__table {
+    margin-bottom: 60px;
+    background-color: white;
+    border-collapse: collapse;
+
+    position: relative;
+}
+
+table {
+    /*width: 100%;*/
+    border-radius: 1px;
+}
+
+thead th {
+    font-weight: normal;
+    color: rgb(150, 150, 150);
+}
+
+
+span {
+    padding: 15px 50px;
+}
+
+
+thead th span,
+tr td span {
+    display: block;
+    border-bottom: 1px solid rgb(232, 240, 246);
+}
+
+th, td {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+tr > td:first-child,
+th:first-child {
+    padding-right: 40px;
+}
+
+tr > td:last-child,
+th:last-child {
+    padding-left: 40px;
+}
+
+
+/*hr {*/
+/*    color: rgb(232, 240, 246);*/
+/*    width: 90%;*/
+
+/*    background-color: rgb(232, 240, 246);*/
+/*    border: none;*/
+/*    height: 1px;*/
+/*}*/
