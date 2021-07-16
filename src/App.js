@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 
 import Nav from "./components/Nav";
@@ -12,8 +11,8 @@ function App() {
         <div className="App">
             <Nav/>
             {/*<MainScreen/>*/}
-            {/*<RegisterScreen/>*/}
-            <UserProfileScreen/>
+            <RegisterScreen/>
+            {/*<UserProfileScreen/>*/}
             <Footer/>
         </div>
     );
