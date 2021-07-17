@@ -5,7 +5,7 @@ import "../assets/css/components/footerStyle.css";
 
 function Footer(props) {
     return (
-        <footer className="footer">
+        <footer className={"footer " + props.className}>
             <p className="footer__text"> تمام حقوق برای توسعه‌دهنده، دانیال حمدی، محفوظ است </p>
         </footer>
     );

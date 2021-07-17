@@ -4,7 +4,7 @@ import "../assets/css/screens/userProfileStyle.css";
 
 function UserProfileScreen(props) {
     return (
-        <div className="userProfileScreen">
+        <div className={"userProfileScreen " + props.className}>
             <h1 className="userProfileScreen__title">
                 هادی عزیز، خوش آمدید
             </h1>
@@ -18,8 +18,8 @@ function UserProfileScreen(props) {
                     رسیدها
                 </button>
 
-                <button >
-                    مادر چاق
+                <button>
+                    یه چیز دیگه
                 </button>
             </div>
 

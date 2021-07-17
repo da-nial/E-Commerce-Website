@@ -5,7 +5,7 @@ import "../assets/css/screens/registerScreenStyle.css";
 
 function RegisterScreen(props) {
     return (
-        <div className="registerScreen">
+        <div className={"registerScreen " + props.className}>
             <h2 className="registerScreen__title">
                 فروشگاه - ثبت نام
             </h2>

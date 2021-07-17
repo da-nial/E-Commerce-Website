@@ -1,5 +1,4 @@
 .userProfileScreen {
-    height: 80vh;
 
     background-color: rgb(247, 247, 247);
     display: flex;
@@ -28,61 +27,61 @@
 }
 
 
-/*button {*/
-/*    flex-grow: 1;*/
-/*    background-color: transparent;*/
-/*    border: none;*/
-/*    margin: 0;*/
-/*}*/
+button {
+    flex-grow: 1;
+    background-color: transparent;
+    border: none;
+    margin: 0;
+}
 
-/*.button2 {*/
-/*    background-color: rgb(238, 238, 238);*/
-/*}*/
+.button2 {
+    background-color: rgb(238, 238, 238);
+}
 
-/*.userProfileScreen__table {*/
-/*    margin-bottom: 60px;*/
-/*    background-color: white;*/
-/*    border-collapse: collapse;*/
+.userProfileScreen__table {
+    margin-bottom: 60px;
+    background-color: white;
+    border-collapse: collapse;
 
-/*    position: relative;*/
-/*}*/
+    position: relative;
+}
 
-/*table {*/
-/*    !*width: 100%;*!*/
-/*    border-radius: 1px;*/
-/*}*/
+table {
+    /*width: 100%;*/
+    border-radius: 1px;
+}
 
-/*thead th {*/
-/*    font-weight: normal;*/
-/*    color: rgb(150, 150, 150);*/
-/*}*/
-
-
-/*span {*/
-/*    padding: 15px 50px;*/
-/*}*/
+thead th {
+    font-weight: normal;
+    color: rgb(150, 150, 150);
+}
 
 
-/*thead th span,*/
-/*tr td span {*/
-/*    display: block;*/
-/*    border-bottom: 1px solid rgb(232, 240, 246);*/
-/*}*/
+span {
+    padding: 15px 50px;
+}
 
-/*th, td {*/
-/*    padding-left: 0;*/
-/*    padding-right: 0;*/
-/*}*/
 
-/*tr > td:first-child,*/
-/*th:first-child {*/
-/*    padding-right: 40px;*/
-/*}*/
+thead th span,
+tr td span {
+    display: block;
+    border-bottom: 1px solid rgb(232, 240, 246);
+}
 
-/*tr > td:last-child,*/
-/*th:last-child {*/
-/*    padding-left: 40px;*/
-/*}*/
+th, td {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+tr > td:first-child,
+th:first-child {
+    padding-right: 40px;
+}
+
+tr > td:last-child,
+th:last-child {
+    padding-left: 40px;
+}
 
 
 /*hr {*/

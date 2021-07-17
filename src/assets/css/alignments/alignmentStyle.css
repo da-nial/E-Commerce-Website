@@ -1,0 +1,13 @@
+.app__header {
+    flex: 0 1 65px;
+}
+
+.app__content {
+    flex: 1 1 auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.app__footer {
+    flex: 0 1 100px;
+}

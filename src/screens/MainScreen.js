@@ -6,9 +6,9 @@ import CategoryBox from "../components/CategoryBox";
 import PriceBox from "../components/PriceBox";
 import ProductsView from "../views/ProductsView";
 
-function MainScreen() {
+function MainScreen(props) {
     return (
-        <div className="mainScreen">
+        <div className={"mainScreen " + props.className}>
             <HeroHeader/>
 
             <SortBox/>

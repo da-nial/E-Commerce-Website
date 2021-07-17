@@ -1,4 +1,5 @@
 import './App.css';
+import "./assets/css/alignments/alignmentStyle.css"
 
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
@@ -9,11 +10,11 @@ import UserProfileScreen from "./screens/UserProfileScreen";
 function App() {
     return (
         <div className="App">
-            <Nav/>
-            {/*<MainScreen/>*/}
-            <RegisterScreen/>
-            {/*<UserProfileScreen/>*/}
-            <Footer/>
+            <Nav className="app__header"/>
+            {/*<MainScreen className="app__content"/>*/}
+            {/*<RegisterScreen className="app__content"/>*/}
+            <UserProfileScreen className="app__content"/>
+            <Footer className="app__footer"/>
         </div>
     );
 }

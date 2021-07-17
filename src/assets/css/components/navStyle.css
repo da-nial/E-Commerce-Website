@@ -1,9 +1,8 @@
 .nav {
+    /*flex: 0 1 65px;*/
+
     background-color: white;
 
-    padding-top: 10px;
-
-    height: 65px;
     display: flex;
     align-items: center;
     justify-content: center;
