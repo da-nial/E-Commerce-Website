@@ -18,7 +18,6 @@ function ProductCard(props) {
                 <p className="productCard__price">
                     ۱۰.۰۰۰ تومان
                 </p>
-
                 <button>
                     خرید محصول
                 </button>

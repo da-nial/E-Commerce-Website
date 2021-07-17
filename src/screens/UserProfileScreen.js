@@ -10,15 +10,15 @@ function UserProfileScreen(props) {
             </h1>
 
             <div className="userProfileScreen__tab">
-                <button>
+                <button className="userProfileScreen__tab__button userProfileScreen__tab__button--selected">
                     پروفایل
                 </button>
 
-                <button className="button2">
+                <button className="userProfileScreen__tab__button">
                     رسیدها
                 </button>
 
-                <button>
+                <button className="userProfileScreen__tab__button">
                     یه چیز دیگه
                 </button>
             </div>

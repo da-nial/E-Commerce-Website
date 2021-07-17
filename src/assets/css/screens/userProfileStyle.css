@@ -27,14 +27,14 @@
 }
 
 
-button {
+.userProfileScreen__tab__button {
     flex-grow: 1;
     background-color: transparent;
     border: none;
     margin: 0;
 }
 
-.button2 {
+.userProfileScreen__tab__button--selected {
     background-color: rgb(238, 238, 238);
 }
 
@@ -43,13 +43,11 @@ button {
     background-color: white;
     border-collapse: collapse;
 
+    border-radius: 1px;
+
     position: relative;
 }
 
-table {
-    /*width: 100%;*/
-    border-radius: 1px;
-}
 
 thead th {
     font-weight: normal;
@@ -57,7 +55,7 @@ thead th {
 }
 
 
-span {
+.userProfileScreen span {
     padding: 15px 50px;
 }
 
@@ -82,13 +80,3 @@ tr > td:last-child,
 th:last-child {
     padding-left: 40px;
 }
-
-
-/*hr {*/
-/*    color: rgb(232, 240, 246);*/
-/*    width: 90%;*/
-
-/*    background-color: rgb(232, 240, 246);*/
-/*    border: none;*/
-/*    height: 1px;*/
-/*}*/

@@ -48,20 +48,15 @@
     height: 2px;
 }
 
-.productCard__price {
-    margin-right: 10px;
-}
-
 .productCard__span {
     display: flex;
     align-items: center;
-    margin: 10px auto;
+    justify-content: space-between;
+
+    margin: auto 10px;
 }
 
 .productCard__span button {
-    margin-right: auto;
-    margin-left: 10px;
-
     background-color: rgb(6, 156, 245);
     border-color: rgb(6, 156, 245);
     border-style: solid;
