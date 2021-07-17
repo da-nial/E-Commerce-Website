@@ -22,7 +22,6 @@
 
 .mainScreen__mainSection {
     margin: 15px 30px 60px;
-    /*flex: 1;*/
 
     display: grid;
     grid-template-columns: repeat(4, 1fr);

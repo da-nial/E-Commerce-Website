@@ -6,8 +6,7 @@ import "../assets/css/components/navStyle.css"
 
 function Nav(props) {
     return (
-
-        <nav className="nav">
+        <nav className={"nav " + props.className}>
             <ul className="nav__ul">
                 <li>
                     <a href="/"> فروشگاه </a>
