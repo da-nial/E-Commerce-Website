@@ -1,11 +1,12 @@
 .sortBox {
+    width: 100%;
     grid-column: 1 / 5;
 
     height: 50px;
     background-color: white;
 
-    padding: 0 5px;
-    margin: 0 5px;
+    /*padding: 0 5px;*/
+    /*margin: 0 5px;*/
 
 
     display: flex;
@@ -24,7 +25,7 @@
 
 .sortBox__ul li {
     display: inline;
-    margin-inline: 15px;
+    margin: auto 10px;
 }
 
 .sortBox__ul button {

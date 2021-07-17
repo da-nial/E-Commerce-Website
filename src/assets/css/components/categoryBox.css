@@ -1,6 +1,11 @@
 .categoryBox {
     background-color: white;
-    margin: 0px 10px;
+
+    height: 250px;
+    overflow: auto;
+
+    width: 100%;
+
 
     border-radius: 5px;
 }
@@ -12,7 +17,7 @@
 
 .categoryBox__title {
     text-align: right;
-    margin-right: 20px;
+    padding-right: 15px;
 }
 
 .categoryBox__divider {
@@ -34,7 +39,11 @@
 .categoryBox__ul {
     list-style-type: none;
     text-align: right;
-    margin-right: 0;
-    margin-left: auto;
+
+    padding-right: 15px;
+}
+
+.categoryBox__ul li {
+    padding: 5px 0;
 }
 

@@ -11,15 +11,16 @@ function MainScreen(props) {
         <div className={"mainScreen " + props.className}>
             <HeroHeader/>
 
-            <SortBox/>
+            <section className="mainScreen__mainSection">
+                <SortBox/>
 
-            <section className="mainScreen__sidebar">
+                <section className="mainScreen__sidebar">
                 <CategoryBox/>
                 <PriceBox/>
+                </section>
+
+                <ProductsView/>
             </section>
-
-            <ProductsView/>
-
         </div>
     );
 }

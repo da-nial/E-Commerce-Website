@@ -20,7 +20,7 @@ function Slider({slides}) {
     useEffect(() => {
         const interval = setInterval(() => {
             nextSlide();
-        }, 550000);
+        }, 10000);
 
         return () => {
             clearInterval(interval);

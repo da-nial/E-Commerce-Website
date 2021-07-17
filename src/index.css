@@ -29,11 +29,27 @@ input, input::placeholder, textarea {
     text-align: right;
 }
 
+input[type=checkbox] {
+    -webkit-appearance: none;
+
+    width: 1.3em;
+    height: 1.3em;
+    background-color: white;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+    outline: none;
+    cursor: pointer;
+}
+
+input[type=checkbox]:checked {
+    background-color: rgb(67, 156, 238);
+}
+
 
 input[type=submit] {
     -webkit-appearance: button;
 }
-
 
 input:focus {
     outline: none;

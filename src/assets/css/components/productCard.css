@@ -1,15 +1,14 @@
 .productCard {
     background-color: white;
-    max-width: 300px;
+    width: 100%;
 
-    margin-bottom: 40px;
     border-radius: 5px;
 
 }
 
 .productCard__img {
     margin-top: 12.5px;
-    width: 275px;
+    width: 250px;
 
     border-radius: 5px;
 }
