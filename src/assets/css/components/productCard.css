@@ -6,6 +6,10 @@
 
 }
 
+.productCard__upperSection {
+    height: 75%;
+}
+
 .productCard__img {
     margin-top: 12.5px;
     width: 250px;
@@ -13,7 +17,7 @@
     border-radius: 5px;
 }
 
-.productCard__title {
+.productCard__name {
     text-align: right;
     margin-right: 20px;
 
@@ -44,11 +48,11 @@
     display: block;
     border-top: solid 1px rgb(232, 232, 232);
     width: 80%;
-    margin: auto;
+    margin: 0 auto;
     height: 2px;
 }
 
-.productCard__span {
+.productCard__lowerSection {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -56,7 +60,7 @@
     margin: auto 10px;
 }
 
-.productCard__span button {
+.productCard__lowerSection button {
     background-color: rgb(6, 156, 245);
     border-color: rgb(6, 156, 245);
     border-style: solid;

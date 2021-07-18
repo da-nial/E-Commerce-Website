@@ -1,6 +1,6 @@
 import React from 'react';
 
-import "../assets/css/components/categoryBox.css"
+import "../assets/css/components/categoryBoxStyle.css"
 
 function CategoryBox(props) {
     return (

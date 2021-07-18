@@ -1,0 +1,28 @@
+.textarea__wrapper {
+    display: flex;
+}
+
+.textarea__label {
+    color: white;
+    background-color: rgb(14, 186, 197);
+    padding: 10px 0;
+    border-radius: 0 3px 3px 0;
+
+    margin-top: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 100px;
+}
+
+
+.textarea__textarea {
+    vertical-align: middle;
+    grid-auto-columns: 100%;
+    border-color: white;
+    border-style: solid;
+    border-radius: 3px 0 0 3px;
+
+    flex-grow: 1;
+}

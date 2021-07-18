@@ -39,44 +39,6 @@
 }
 
 .userProfileScreen__table {
-    margin-bottom: 60px;
-    background-color: white;
-    border-collapse: collapse;
-
-    border-radius: 1px;
-
-    position: relative;
-}
-
-
-thead th {
-    font-weight: normal;
-    color: rgb(150, 150, 150);
-}
-
-
-.userProfileScreen span {
-    padding: 15px 50px;
-}
-
-
-thead th span,
-tr td span {
-    display: block;
-    border-bottom: 1px solid rgb(232, 240, 246);
-}
-
-th, td {
-    padding-left: 0;
-    padding-right: 0;
-}
-
-tr > td:first-child,
-th:first-child {
-    padding-right: 40px;
-}
-
-tr > td:last-child,
-th:last-child {
-    padding-left: 40px;
+    width: 75%;
+    margin-bottom: 50px;
 }

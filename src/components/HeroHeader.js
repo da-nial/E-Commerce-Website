@@ -3,7 +3,7 @@ import React from 'react';
 import "../assets/css/components/heroHeaderStyle.css"
 import clockPic from "../assets/pics/clock.png"
 import Slider from "./Slider";
-import sliderImages from "../assets/pics/sliderImages";
+import sliderImages from "../assets/data/sliderImages";
 
 function HeroHeader(props) {
     return (
