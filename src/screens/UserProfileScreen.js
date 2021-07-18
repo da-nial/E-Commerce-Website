@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 
-import tableRows from "../assets/data/sampleData";
+import {sampleUserReceipts} from "../assets/data/sampleData";
 
 import "../assets/css/screens/userProfileScreenStyle.css";
 import Table from "../components/Table";
@@ -19,7 +19,7 @@ function UserProfileScreen(props) {
         {
             name: "رسیدها",
             index: 1,
-            component: <Table data={tableRows} className={"userProfileScreen__table"}/>,
+            component: <Table data={sampleUserReceipts} className={"userProfileScreen__table"}/>,
         },
     ]
 

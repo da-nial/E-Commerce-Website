@@ -1,58 +1,96 @@
-const tableRows = [
+export const sampleUserReceipts = [
     {
-        A: 1,
-        B: 2,
-        C: 3,
-        D: 4
+        trackCode: "SHOP102030",
+        productName: "موس گیمینگ ریزر",
+        price: "۱۰,۰۰۰ تومان",
+        address: "تهران، تهران، امیرکبیر"
     },
     {
-        A: 5,
-        B: 6,
-        C: 7,
-        D: 8
+        trackCode: "SHOP102030",
+        productName: "موس گیمینگ ریزر",
+        price: "۱۰,۰۰۰ تومان",
+        address: "تهران، تهران، امیرکبیر"
     },
     {
-        A: 9,
-        B: 10,
-        C: 11,
-        D: 12
+        trackCode: "SHOP102030",
+        productName: "موس گیمینگ ریزر",
+        price: "۱۰,۰۰۰ تومان",
+        address: "تهران، تهران، امیرکبیر"
     },
-    // {
-    //     A: 1,
-    //     B: 2,
-    //     C: 3,
-    //     D: 4
-    // },
-    // {
-    //     A: 5,
-    //     B: 6,
-    //     C: 7,
-    //     D: 8
-    // },
-    // {
-    //     A: 9,
-    //     B: 10,
-    //     C: 11,
-    //     D: 12
-    // },
-    // {
-    //     A: 1,
-    //     B: 2,
-    //     C: 3,
-    //     D: 4
-    // },
-    // {
-    //     A: 5,
-    //     B: 6,
-    //     C: 7,
-    //     D: 8
-    // },
-    // {
-    //     A: 9,
-    //     B: 10,
-    //     C: 11,
-    //     D: 12
-    // },
+    {
+        trackCode: "SHOP102030",
+        productName: "موس گیمینگ ریزر",
+        price: "۱۰,۰۰۰ تومان",
+        address: "تهران، تهران، امیرکبیر"
+    },
+    {
+        trackCode: "SHOP102030",
+        productName: "موس گیمینگ ریزر",
+        price: "۱۰,۰۰۰ تومان",
+        address: "تهران، تهران، امیرکبیر"
+    },
 ]
 
-export default tableRows;
+export const sampleAdminReceipts = [
+    {
+        trackCode: "SHOP102030",
+        productName: "موس گیمینگ ریزر",
+        price: "۱۰,۰۰۰ تومان",
+        buyer: "هادی",
+        address: "تهران، تهران، امیرکبیر"
+    },
+    {
+        trackCode: "SHOP102030",
+        productName: "موس گیمینگ ریزر",
+        price: "۱۰,۰۰۰ تومان",
+        buyer: "هادی",
+        address: "تهران، تهران، امیرکبیر"
+    },
+    {
+        trackCode: "SHOP102030",
+        productName: "موس گیمینگ ریزر",
+        price: "۱۰,۰۰۰ تومان",
+        buyer: "هادی",
+        address: "تهران، تهران، امیرکبیر"
+    },
+    {
+        trackCode: "SHOP102030",
+        productName: "موس گیمینگ ریزر",
+        price: "۱۰,۰۰۰ تومان",
+        buyer: "هادی",
+        address: "تهران، تهران، امیرکبیر"
+    },
+    {
+        trackCode: "SHOP102030",
+        productName: "موس گیمینگ ریزر",
+        price: "۱۰,۰۰۰ تومان",
+        buyer: "هادی",
+        address: "تهران، تهران، امیرکبیر"
+    },
+    {
+        trackCode: "SHOP102030",
+        productName: "موس گیمینگ ریزر",
+        price: "۱۰,۰۰۰ تومان",
+        buyer: "هادی",
+        address: "تهران، تهران، امیرکبیر"
+    },
+]
+
+
+export const sampleCategories = [
+    {
+        name: "دسته‌بندی ۱"
+    },
+    {
+        name: "دسته‌بندی ۱"
+    },
+    {
+        name: "دسته‌بندی ۱"
+    },
+    {
+        name: "دسته‌بندی ۱"
+    },
+    {
+        name: "دسته‌بندی ۱"
+    },
+]
