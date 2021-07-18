@@ -9,34 +9,3 @@
     color: rgb(14, 186, 197);
     margin-bottom: 30px;
 }
-
-.registerScreen__form {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(350px, 1fr));
-    grid-gap: 10px;
-
-    margin-bottom: 30px;
-}
-
-.registerScreen__fieldWrapper {
-    display: flex;
-}
-
-.registerScreen button {
-    margin: 0 auto;
-    display: block;
-
-    background-color: rgb(255, 200, 13);
-    border-color: rgb(255, 200, 10);
-    border-style: solid;
-    border-radius: 24px;
-
-    color: rgb(0, 0, 0);
-    padding: 8px 30px 8px 30px;
-
-    width: 150px;
-}
-
-.registerScreen__addressWrapper {
-    grid-column: 1 / 3;
-}

@@ -1,0 +1,33 @@
+.tabMenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+
+    background-color: inherit;
+    width: 350px;
+    height: 40px;
+    border-radius: 50px;
+    border-color: rgb(238, 238, 238);
+    border-style: solid;
+}
+
+.tabMenu__button {
+    flex-grow: 1;
+    background-color: transparent;
+    border: none;
+    margin: 0;
+}
+
+.tabMenu__button--selected {
+    background-color: rgb(238, 238, 238);
+}
+
+.tabMenu *:first-child {
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.tabMenu *:last-child {
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}

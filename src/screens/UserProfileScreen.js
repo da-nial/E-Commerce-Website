@@ -1,32 +1,49 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 import tableRows from "../assets/data/sampleData";
 
-import "../assets/css/screens/userProfileStyle.css";
+import "../assets/css/screens/userProfileScreenStyle.css";
 import Table from "../components/Table";
+import TabMenu from "../components/TabMenu";
+import RegisterEditView from "../views/RegisterEditView";
 
 function UserProfileScreen(props) {
+    const [curTab, setCurTab] = useState(0);
+
+    const tabs = [
+        {
+            name: "پروفایل",
+            index: 0,
+            component: <RegisterEditView type="edit"/>
+        },
+        {
+            name: "رسیدها",
+            index: 1,
+            component: <Table data={tableRows} className={"userProfileScreen__table"}/>,
+        },
+    ]
+
     return (
         <div className={"userProfileScreen " + props.className}>
-            <h1 className="userProfileScreen__title">
-                هادی عزیز، خوش آمدید
-            </h1>
-
-            <div className="userProfileScreen__tab">
-                <button className="userProfileScreen__tab__button userProfileScreen__tab__button--selected">
-                    پروفایل
+            <section className="userProfileScreen__welcomeSection">
+                <h1 className="userProfileScreen__welcome">
+                    هادی عزیز، خوش آمدید |
+                </h1>
+                <h5 className="userProfileScreen__balance">
+                    موجودی حساب شما: ۱۰,۰۰۰
+                </h5>
+                <button className="userProfileScreen__increaseBalanceButton">
+                    افزایش موجودی
                 </button>
+            </section>
 
-                <button className="userProfileScreen__tab__button">
-                    رسیدها
-                </button>
+            <TabMenu
+                tabs={tabs}
+                setCurTab={setCurTab}
+                curTab={curTab}
+                className="userProfileScreen__tab"/>
 
-                <button className="userProfileScreen__tab__button">
-                    یه چیز دیگه
-                </button>
-            </div>
-
-            <Table data={tableRows} className={"userProfileScreen__table"}/>
+            {tabs[curTab].component}
         </div>
     );
 }
