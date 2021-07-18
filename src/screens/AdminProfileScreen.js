@@ -22,7 +22,7 @@ function AdminProfileScreen(props) {
         },
         {
             name: "رسیدها",
-            index: 1,
+            index: 2,
             component: <Table data={sampleAdminReceipts} className={"userProfileScreen__table"}/>,
         }
     ]
