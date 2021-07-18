@@ -21,7 +21,8 @@ function RegisterScreen(props) {
         },
         {
             name: "رمز عبور",
-            id: "password"
+            id: "password",
+            type: "password"
         }
 
     ]
@@ -33,7 +34,7 @@ function RegisterScreen(props) {
 
             <form className="registerScreen__form" action="/">
                 {fields.map((field, index) => (
-                        <TextInput name={field.name} id={field.id}/>
+                        <TextInput inputProps={field}/>
                     )
                 )}
 
