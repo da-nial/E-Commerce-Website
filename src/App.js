@@ -12,8 +12,8 @@ function App() {
     return (
         <div className="App">
             <Nav className="app__header"/>
-            {/*<MainScreen className="app__content"/>*/}
-            <RegisterScreen className="app__content"/>
+            <MainScreen className="app__content"/>
+            {/*<RegisterScreen className="app__content"/>*/}
             {/*<UserProfileScreen className="app__content"/>*/}
             <Footer className="app__footer"/>
         </div>

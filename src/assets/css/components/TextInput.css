@@ -33,3 +33,13 @@
 
     flex-grow: 1;
 }
+
+.inputField__input--correct {
+    border-color: darkseagreen;
+    border-radius: 3px;
+}
+
+.inputField__input--error {
+    border-color: indianred;
+    border-radius: 3px;
+}

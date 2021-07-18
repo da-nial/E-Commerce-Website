@@ -4,10 +4,12 @@
 
     border-radius: 5px;
 
+    height: 400px;
+
 }
 
 .productCard__upperSection {
-    height: 75%;
+    height: 80%;
 }
 
 .productCard__img {

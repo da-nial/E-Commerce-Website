@@ -150,6 +150,14 @@ const products = [
         numSold: 7,
         photo: sample,
     },
+    {
+        name: "یک کالای دیگر",
+        category: "تکنولوژی",
+        price: "۱۵۰۰۰",
+        numInStock: 5,
+        numSold: 7,
+        photo: sample,
+    }
 ]
 
 export default products;

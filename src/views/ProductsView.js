@@ -8,21 +8,9 @@ import Pagination from "../components/Pagination";
 
 function ProductsView(props) {
     const [products, setProducts] = useState(sampleProducts);
-    const [loading, setLoading] = useState(false);
     const [currentPage, setCurrentPage] = useState(1);
-    const [postsPerPage] = useState(10);
+    const [postsPerPage, setPostsPerPage] = useState(15);
 
-
-    // useEffect(() => {
-    //     const fetchPosts = async () => {
-    //         setLoading(true);
-    //         const res = await axios.get('https://jsonplaceholder.typicode.com/posts');
-    //         setPosts(res.data);
-    //         setLoading(false);
-    //     };
-    //
-    //     fetchPosts();
-    // }, []);
 
     // Get current posts
     const indexOfLastPost = currentPage * postsPerPage;
@@ -32,16 +20,25 @@ function ProductsView(props) {
     // Change page
     const paginate = pageNumber => setCurrentPage(pageNumber);
 
+    // Change postsPerPage
+    // const changePostsPerPage = postsPerPage => setPostsPerPage(postsPerPage);
+    const changePostsPerPage = event => {
+        console.log(event.target.value);
+        setPostsPerPage(event.target.value)
+    }
 
     return (
-        <div className="productsView">
-            {products.map((product, index) => (
+        <div className="productsView" name="#ProductsView">
+            {currentPosts.map((product, index) => (
                 <ProductCard product={product}/>
             ))}
-            <Pagination postsPerPage={postsPerPage}
-                        totalPosts={products.length}
+            <Pagination totalPosts={products.length}
+                        postsPerPage={postsPerPage}
+                        changePostsPerPage={changePostsPerPage}
+                        currentPage={currentPage}
                         paginate={paginate}
             />
+
         </div>
     );
 }

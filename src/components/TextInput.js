@@ -16,7 +16,7 @@ function TextInput({inputProps}) {
         <div className="inputField__wrapper">
             <label className="inputField__label" htmlFor="fname">{name}</label>
 
-            <input className="inputField_input"
+            <input className="inputField_input inputField__input--error"
                    type={type}
                    id={id}
                    name={name}
