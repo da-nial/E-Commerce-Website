@@ -42,20 +42,3 @@
 .userProfileScreen__tab {
     margin-bottom: 30px;
 }
-
-
-.userProfileScreen__tab__button {
-    flex-grow: 1;
-    background-color: transparent;
-    border: none;
-    margin: 0;
-}
-
-.userProfileScreen__tab__button--selected {
-    background-color: rgb(238, 238, 238);
-}
-
-.userProfileScreen__table {
-    width: 75%;
-    margin-bottom: 50px;
-}

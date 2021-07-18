@@ -1,0 +1,22 @@
+.adminProfileScreen {
+
+    background-color: rgb(247, 247, 247);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.adminProfileScreen__welcomeSection {
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.adminProfileScreen__welcome {
+    display: inline;
+}
+
+
+.adminProfileScreen__tab {
+    margin-bottom: 30px;
+}
