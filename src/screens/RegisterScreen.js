@@ -9,20 +9,26 @@ function RegisterScreen(props) {
     const fields = [
         {
             name: "نام",
-            id: "fname"
+            id: "fname",
+            required: true
         },
         {
             name: "نام خانوادگی",
-            id: "lname"
+            id: "lname",
+            required: true
         },
         {
             name: "ایمیل",
-            id: "email"
+            id: "email",
+            type: "email",
+            required: true
         },
         {
             name: "رمز عبور",
             id: "password",
-            type: "password"
+            type: "password",
+            pattern: ".{6,}",
+            required: true,
         }
 
     ]
