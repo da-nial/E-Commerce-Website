@@ -1,0 +1,19 @@
+.adminProductView {
+    min-width: 900px;
+}
+
+.adminProductView__button {
+    background-color: rgb(6, 156, 245);
+    border-color: rgb(6, 156, 245);
+    border-style: solid;
+    border-radius: 24px;
+
+    padding: 5px 10px;
+
+
+    color: white;
+    box-shadow: 0 0 3px 3px rgb(169, 223, 252);
+
+    margin-bottom: 50px;
+
+}

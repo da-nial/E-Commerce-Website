@@ -15,8 +15,8 @@ function MainScreen(props) {
                 <SortBox/>
 
                 <section className="mainScreen__sidebar">
-                <CategoryBox/>
-                <PriceBox/>
+                    <CategoryBox/>
+                    <PriceBox/>
                 </section>
 
                 <ProductsView/>

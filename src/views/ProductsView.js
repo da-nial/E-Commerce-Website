@@ -30,7 +30,7 @@ function ProductsView(props) {
     return (
         <div className="productsView" name="#ProductsView">
             {currentPosts.map((product, index) => (
-                <ProductCard product={product}/>
+                <ProductCard product={product} showNumSold/>
             ))}
             <Pagination totalPosts={products.length}
                         postsPerPage={postsPerPage}
@@ -41,6 +41,6 @@ function ProductsView(props) {
 
         </div>
     );
-}
+};
 
 export default ProductsView;

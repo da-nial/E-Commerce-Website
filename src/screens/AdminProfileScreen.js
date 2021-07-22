@@ -5,6 +5,9 @@ import RegisterEditView from "../views/RegisterEditView";
 import Table from "../components/Table";
 import {sampleCategories, sampleAdminReceipts} from "../assets/data/sampleData";
 import TabMenu from "../components/TabMenu";
+import AdminReceiptView from "../views/AdminReceiptView";
+import AdminProductView from "../views/AdminProductView";
+import AdminCategoryView from "../views/AdminCategoryView";
 
 function AdminProfileScreen(props) {
     const [curTab, setCurTab] = useState(0);
@@ -13,17 +16,17 @@ function AdminProfileScreen(props) {
         {
             name: "لیست کالاها",
             index: 0,
-            component: <RegisterEditView type="edit"/>
+            component: <AdminProductView/>
         },
         {
             name: "لیست دسته‌ها",
             index: 1,
-            component: <Table data={sampleCategories} className={"userProfileScreen__table"}/>,
+            component: <AdminCategoryView/>,
         },
         {
             name: "رسیدها",
             index: 2,
-            component: <Table data={sampleAdminReceipts} className={"userProfileScreen__table"}/>,
+            component: <AdminReceiptView/>,
         }
     ]
 

@@ -1,20 +1,37 @@
+.productCard__wrapper {
+    position: relative;
+
+    padding: 15px;
+}
+
 .productCard {
-    background-color: white;
     width: 100%;
+    background-color: white;
 
     border-radius: 5px;
 
     height: 400px;
-
 }
 
 .productCard__upperSection {
     height: 80%;
 }
 
+.productCard__numSold {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background-color: rgb(247, 247, 247);
+    color: rgb(67, 156, 238);
+    padding: 10px 15px;
+    border-radius: 50%;
+    box-shadow: 0 0 7.5px rgba(120, 120, 120, 0.5);
+}
+
 .productCard__img {
     margin-top: 12.5px;
-    width: 250px;
+    width: 220px;
 
     border-radius: 5px;
 }

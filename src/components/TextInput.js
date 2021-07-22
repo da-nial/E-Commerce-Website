@@ -3,7 +3,7 @@ import React from 'react';
 import "../assets/css/components/TextInput.css";
 
 
-function TextInput({inputProps}) {
+function TextInput({inputProps, className}) {
     const name = inputProps.name
     const id = inputProps.id
     const type = inputProps.type ? inputProps.type : "text"
@@ -16,7 +16,7 @@ function TextInput({inputProps}) {
     const placeholderTemplate = " خود را وارد کنید . . . "
 
     return (
-        <div className="inputField__wrapper">
+        <div className={"inputField__wrapper " + inputProps.className}>
             <label className="inputField__label" htmlFor="fname">{name}</label>
 
             <input className="inputField_input"
