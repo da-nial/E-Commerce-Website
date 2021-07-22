@@ -1,6 +1,7 @@
 import React from 'react';
 
 import LoginRegister from "./LoginRegister";
+import Dropdown from "./Dropdown";
 
 import "../assets/css/components/navStyle.css"
 
@@ -29,7 +30,8 @@ function Nav(props) {
                 </li>
 
                 <li>
-                    <LoginRegister/>
+                    {/*<LoginRegister/>*/}
+                    <Dropdown/>
                 </li>
             </ul>
         </nav>

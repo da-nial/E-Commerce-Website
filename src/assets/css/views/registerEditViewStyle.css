@@ -7,7 +7,7 @@
 }
 
 .registerEditView__submitButton {
-    margin: 0 auto;
+    margin: 25px auto;
     display: block;
 
     background-color: rgb(255, 200, 13);

@@ -8,7 +8,10 @@ function TextInput({inputProps}) {
     const id = inputProps.id
     const type = inputProps.type ? inputProps.type : "text"
     const pattern = inputProps.pattern
-    const required = inputProps.required ? inputProps.required : false
+    const required = inputProps.required
+    const error = inputProps.error
+    const onChange = inputProps.onChange
+
 
     const placeholderTemplate = " خود را وارد کنید . . . "
 
@@ -23,7 +26,11 @@ function TextInput({inputProps}) {
                    pattern={pattern}
                    required={required}
                    placeholder={name + placeholderTemplate}
+                   onInput={onChange}
             />
+            <div>
+                {error}
+            </div>
         </div>
     );
 }
