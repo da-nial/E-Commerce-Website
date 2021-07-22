@@ -22,7 +22,7 @@ function LoginScreen(props) {
     ]
 
     return (
-        <div className={"loginScreen " + props.className}>
+        <div className={"loginScreen " + "app__content"}>
             <h2 className="registerScreen__title">
                 فروشگاه - ورود
             </h2>

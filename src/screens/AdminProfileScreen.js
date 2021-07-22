@@ -31,7 +31,7 @@ function AdminProfileScreen(props) {
     ]
 
     return (
-        <div className={"adminProfileScreen " + props.className}>
+        <div className={"adminProfileScreen " + "app__content"}>
             <section className="adminProfileScreen__welcomeSection">
                 <h1 className="adminProfileScreen__welcome">
                     ادمین عزیز، خوش آمدید

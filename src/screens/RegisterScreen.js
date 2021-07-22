@@ -6,9 +6,8 @@ import RegisterEditView from "../views/RegisterEditView";
 
 
 function RegisterScreen(props) {
-
     return (
-        <div className={"registerScreen " + props.className}>
+        <div className={"registerScreen " + "app__content"}>
             <h2 className="registerScreen__title">
                 فروشگاه - ثبت نام
             </h2>

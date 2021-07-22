@@ -8,7 +8,7 @@ import ProductsView from "../views/ProductsView";
 
 function MainScreen(props) {
     return (
-        <div className={"mainScreen " + props.className}>
+        <div className={"mainScreen " + "app__content"}>
             <HeroHeader/>
 
             <section className="mainScreen__mainSection">

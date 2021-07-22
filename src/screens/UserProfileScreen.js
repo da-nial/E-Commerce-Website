@@ -24,7 +24,7 @@ function UserProfileScreen(props) {
     ]
 
     return (
-        <div className={"userProfileScreen " + props.className}>
+        <div className={"userProfileScreen " + "app__content"}>
             <section className="userProfileScreen__welcomeSection">
                 <h1 className="userProfileScreen__welcome">
                     هادی عزیز، خوش آمدید |
