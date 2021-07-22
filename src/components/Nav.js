@@ -1,5 +1,7 @@
 import React from 'react';
 
+
+import {Link} from "react-router-dom";
 import LoginRegister from "./LoginRegister";
 import Dropdown from "./Dropdown";
 
@@ -10,23 +12,23 @@ function Nav(props) {
         <nav className={"nav " + props.className}>
             <ul className="nav__ul">
                 <li>
-                    <a href="/"> فروشگاه </a>
+                    <Link to="/"> فروشگاه </Link>
                 </li>
 
                 <li>
-                    <a href="/index"> صفحه‌ی اول </a>
+                    <Link to="/index"> صفحه‌ی اول </Link>
                 </li>
 
                 <li>
-                    <a href="/contact-us"> تماس با ما </a>
+                    <Link to="/contact-us"> تماس با ما </Link>
                 </li>
 
                 <li>
-                    <a href="/support"> پشتیبانی </a>
+                    <Link to="/support"> پشتیبانی </Link>
                 </li>
 
                 <li>
-                    <a href="/support"> محصولات </a>
+                    <Link to="/"> محصولات </Link>
                 </li>
 
                 <li>
