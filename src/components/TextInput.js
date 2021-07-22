@@ -25,7 +25,7 @@ function TextInput({inputProps, className}) {
                    name={name}
                    pattern={pattern}
                    required={required}
-                   placeholder={name + placeholderTemplate}
+                   placeholder={inputProps.placeholder ? inputProps.placeholder : name + placeholderTemplate}
                    onInput={onChange}
             />
             <div>

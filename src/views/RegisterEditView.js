@@ -28,7 +28,6 @@ function RegisterEditView(props) {
             name: "نام",
             id: "fname",
             required: true,
-            error: "z!",
             // onChange: handleChange
         },
         {

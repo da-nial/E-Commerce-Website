@@ -11,6 +11,7 @@ function AdminReceiptView(props) {
         name: "جستجوی کد پیگیری",
         id: "email",
         type: "email",
+        placeholder: "کد پیگیری را برای جستجو وارد کنید . . .",
         required: true
     }
 
