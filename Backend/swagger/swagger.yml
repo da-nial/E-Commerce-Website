@@ -1,0 +1,557 @@
+swagger: "2.0"
+info:
+  title: beego Test API
+  description: beego has a very cool tools to autogenerate documents for your API
+  version: 1.0.0
+  termsOfService: http://beego.me/
+  contact:
+    email: astaxie@gmail.com
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+basePath: /v1
+paths:
+  /category/:
+    get:
+      tags:
+      - category
+      description: Get all of categories
+      operationId: CategoryController.GetCategories
+      responses:
+        "200":
+          description: '"categories"'
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/CategoryModels.Category'
+    post:
+      tags:
+      - category
+      description: Create a new category.
+      operationId: CategoryController.Create
+      parameters:
+      - in: body
+        name: input
+        description: create request
+        required: true
+        schema:
+          $ref: '#/definitions/CategoryModels.CreateRequest'
+      responses:
+        "200":
+          description: '"categories"'
+          schema:
+            $ref: '#/definitions/CategoryModels.Category'
+  /category/{id}/:
+    put:
+      tags:
+      - category
+      description: Update an existing category.
+      operationId: CategoryController.Update
+      parameters:
+      - in: path
+        name: id
+        description: caetgory id
+        required: true
+        type: integer
+        format: int32
+      - in: body
+        name: input
+        description: create request
+        required: true
+        schema:
+          $ref: '#/definitions/CategoryModels.UpdateRequest'
+      responses:
+        "200":
+          description: '"categories"'
+          schema:
+            $ref: '#/definitions/CategoryModels.Category'
+    delete:
+      tags:
+      - category
+      description: Delete an existing category.
+      operationId: CategoryController.Delete
+      parameters:
+      - in: path
+        name: id
+        description: caetgory id
+        required: true
+        type: integer
+        format: int32
+      responses:
+        "200":
+          description: '"categories"'
+          schema:
+            $ref: '#/definitions/CategoryModels.Category'
+  /order/:
+    get:
+      tags:
+      - order
+      operationId: OrderController.GetOrders
+      parameters:
+      - in: query
+        name: orderCode
+        description: order code
+        type: string
+      - in: query
+        name: page
+        description: page
+        type: integer
+        format: int64
+      - in: query
+        name: pageSize
+        description: page size
+        type: integer
+        format: int64
+      responses:
+        "200":
+          description: ""
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/OrderModel.Order'
+    post:
+      tags:
+      - order
+      operationId: OrderController.Order
+      parameters:
+      - in: query
+        name: productId
+        description: product id
+        required: true
+        type: integer
+        format: int32
+      - in: query
+        name: count
+        description: product count
+        required: true
+        type: integer
+        format: int32
+      responses:
+        "200":
+          description: ""
+          schema:
+            $ref: '#/definitions/OrderModel.Order'
+  /order/{code}/:
+    get:
+      tags:
+      - order
+      operationId: OrderController.GetOrders
+      parameters:
+      - in: path
+        name: code
+        description: order code
+        required: true
+        type: string
+      responses:
+        "200":
+          description: ""
+          schema:
+            $ref: '#/definitions/OrderModel.Order'
+  /order/{code}/{status}/:
+    put:
+      tags:
+      - order
+      operationId: OrderController.GetOrders
+      parameters:
+      - in: path
+        name: code
+        description: order code
+        required: true
+        type: string
+      - in: path
+        name: sttaus
+        description: new status
+        required: true
+        schema:
+          $ref: '#/definitions/OrderModels.OrderStatus'
+      - in: query
+        name: status
+        schema:
+          $ref: '#/definitions/OrderModels.OrderStatus'
+      responses:
+        "200":
+          description: ""
+          schema:
+            $ref: '#/definitions/OrderModel.Order'
+  /product/:
+    get:
+      tags:
+      - product
+      description: Get products
+      operationId: ProductController.GetProducts
+      parameters:
+      - in: query
+        name: categoryId
+        description: category id
+        type: integer
+        format: int32
+      - in: query
+        name: page
+        description: page
+        type: integer
+        format: int64
+      - in: query
+        name: pageSize
+        description: page size
+        type: integer
+        format: int64
+      - in: query
+        name: minPrice
+        description: min price
+        type: integer
+        format: int64
+      - in: query
+        name: maxPrice
+        description: max price
+        type: integer
+        format: int64
+      responses:
+        "200":
+          description: Products list
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/ProductModels.Product'
+    post:
+      tags:
+      - product
+      description: Create a new product.
+      operationId: ProductController.Create
+      parameters:
+      - in: body
+        name: input
+        description: create request
+        required: true
+        schema:
+          $ref: '#/definitions/ProductModels.CreateRequest'
+      responses:
+        "200":
+          description: '"categories"'
+          schema:
+            $ref: '#/definitions/ProductModels.Product'
+  /product/{id}/:
+    get:
+      tags:
+      - product
+      description: Get product
+      operationId: ProductController.GetProduct
+      parameters:
+      - in: path
+        name: id
+        description: id
+        required: true
+        type: integer
+        format: int32
+      responses:
+        "200":
+          description: Products list
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/ProductModels.Product'
+    put:
+      tags:
+      - product
+      description: Update a product.
+      operationId: ProductController.Update
+      parameters:
+      - in: path
+        name: id
+        description: id
+        required: true
+        type: integer
+        format: int32
+      - in: body
+        name: input
+        description: update request
+        required: true
+        schema:
+          $ref: '#/definitions/ProductModels.UpdateRequest'
+      responses:
+        "200":
+          description: '"categories"'
+          schema:
+            $ref: '#/definitions/ProductModels.Product'
+  /product/file/:
+    post:
+      tags:
+      - product
+      operationId: ProductController.UploadImage
+  /user/:
+    get:
+      tags:
+      - user
+      description: Get users
+      operationId: UserController.GetUsers
+      parameters:
+      - in: query
+        name: page
+        description: page
+        type: integer
+        format: int64
+      - in: query
+        name: pageSize
+        description: page size
+        type: integer
+        format: int64
+      responses:
+        "200":
+          description: User object
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/UserModels.User'
+  /user/{id}:
+    get:
+      tags:
+      - user
+      description: Get a user's details.
+      operationId: UserController.GetUser
+      parameters:
+      - in: path
+        name: id
+        description: User Id
+        required: true
+        type: integer
+        format: int32
+      responses:
+        "200":
+          description: User object
+          schema:
+            $ref: '#/definitions/UserModels.User'
+        "422":
+          description: Invalid data
+  /user/login:
+    post:
+      tags:
+      - user
+      description: Logs user into the system
+      operationId: UserController.Login
+      parameters:
+      - in: body
+        name: input
+        description: login request
+        required: true
+        schema:
+          $ref: '#/definitions/UserModels.LoginRequest'
+      responses:
+        "200":
+          description: '"login success"'
+          schema:
+            $ref: '#/definitions/UserModels.LoginResponse'
+        "403":
+          description: user not exist
+  /user/me/:
+    get:
+      tags:
+      - user
+      description: Get current user's details.
+      operationId: UserController.GetMe
+      responses:
+        "200":
+          description: User object
+          schema:
+            $ref: '#/definitions/UserModels.User'
+        "422":
+          description: Invalid data
+    put:
+      tags:
+      - user
+      description: update current user. send password only if you want to update it.
+      operationId: UserController.UpdateUser
+      parameters:
+      - in: body
+        name: input
+        description: update request
+        required: true
+        schema:
+          $ref: '#/definitions/UserModels.UpdateRequest'
+      responses:
+        "200":
+          description: User object
+          schema:
+            $ref: '#/definitions/UserModels.User'
+        "422":
+          description: Invalid data
+  /user/me/credit/{credit}/:
+    put:
+      tags:
+      - user
+      description: change credit of user.
+      operationId: UserController.ChangeCredit
+      parameters:
+      - in: path
+        name: credit
+        description: New credit
+        required: true
+        type: integer
+        format: int32
+      responses:
+        "200":
+          description: User object
+          schema:
+            $ref: '#/definitions/UserModels.User'
+        "422":
+          description: Invalid data
+  /user/register:
+    post:
+      tags:
+      - user
+      description: Register a new user into system.
+      operationId: UserController.Register
+      parameters:
+      - in: body
+        name: input
+        description: register request
+        required: true
+        schema:
+          $ref: '#/definitions/UserModels.RegisterRequest'
+      responses:
+        "200":
+          description: register sucess
+          schema:
+            $ref: '#/definitions/UserModels.User'
+        "422":
+          description: Invalid data
+definitions:
+  CategoryModels.Category:
+    title: Category
+    type: object
+    properties:
+      name:
+        type: string
+  CategoryModels.CreateRequest:
+    title: CreateRequest
+    type: object
+    properties:
+      name:
+        type: string
+  CategoryModels.UpdateRequest:
+    title: UpdateRequest
+    type: object
+    properties:
+      name:
+        type: string
+  OrderModel.Order:
+    title: Order
+    type: object
+  OrderModels.OrderStatus:
+    title: OrderStatus
+    format: int64
+    type: integer
+  ProductModels.CreateRequest:
+    title: CreateRequest
+    type: object
+    properties:
+      category_id:
+        type: integer
+        format: int32
+      image:
+        type: string
+      name:
+        type: string
+      price:
+        type: integer
+        format: int32
+      supply:
+        type: integer
+        format: int32
+  ProductModels.Product:
+    title: Product
+    type: object
+    properties:
+      category:
+        $ref: '#/definitions/CategoryModels.Category'
+      category_id:
+        type: integer
+        format: int32
+      image:
+        type: string
+      name:
+        type: string
+      price:
+        type: integer
+        format: int32
+      sold:
+        type: integer
+        format: int32
+      supply:
+        type: integer
+        format: int32
+  ProductModels.UpdateRequest:
+    title: UpdateRequest
+    type: object
+    properties:
+      category_id:
+        type: integer
+        format: int32
+      image:
+        type: string
+      name:
+        type: string
+      price:
+        type: integer
+        format: int32
+      supply:
+        type: integer
+        format: int32
+  UserModels.LoginRequest:
+    title: LoginRequest
+    type: object
+    properties:
+      email:
+        type: string
+      password:
+        type: string
+  UserModels.LoginResponse:
+    title: LoginResponse
+    type: object
+    properties:
+      token:
+        type: string
+  UserModels.RegisterRequest:
+    title: RegisterRequest
+    type: object
+    properties:
+      email:
+        type: string
+      family:
+        type: string
+      name:
+        type: string
+      password:
+        type: string
+  UserModels.UpdateRequest:
+    title: UpdateRequest
+    type: object
+    properties:
+      family:
+        type: string
+      name:
+        type: string
+      password:
+        type: string
+  UserModels.User:
+    title: User
+    type: object
+    properties:
+      address:
+        type: string
+      credit:
+        type: integer
+        format: int32
+      email:
+        type: string
+      family:
+        type: string
+      is_admin:
+        type: boolean
+      name:
+        type: string
+  gorm.Model:
+    title: Model
+    type: object
+tags:
+- name: user
+  description: |
+    Operations about Users

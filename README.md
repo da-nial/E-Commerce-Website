@@ -1,70 +1,117 @@
-# Getting Started with Create React App
+# E-Commerce Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is an e-commerce website built with a React frontend and Golang backend. Users can browse products, add them to a
+cart, and purchase items. The website was developed as the final project of Internet Engineering course, Amirkabir
+University of Technology.
 
-## Available Scripts
+The complete project description is available in 3
+parts ([html/css](docs/instructions1_html_css.pdf), [js](docs/instructions2_js.pdf), [backend](docs/instructions3_backend.pdf))
+at the `docs`
+folder, in Persian.
 
-In the project directory, you can run:
+## Overview
 
-### `npm start`
+- Users can
+    - Browse products by category
+    - Add/remove products to cart
+    - Purchase products via checkout
+    - Register and login
+- Admins can
+    - manage products, orders, and users
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Backend Tech Stack
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- Golang
+- Gin for routing
+- Postgres for data storage
+- JWT for authentication
 
-### `npm test`
+## Running Locally
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Backend
 
-### `npm run build`
+From the `backend` directory:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Run `go mod tidy` to install dependencies
+2. Run `go run main.go` to start the API server on port 8000
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Frontend
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+From the `frontend` directory:
 
-### `npm run eject`
+1. Run `npm install` to install dependencies
+2. Run `npm start` to start the dev server on port 3000
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## API Reference
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### CategoryController
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+| Endpoint | HTTP Method | Description                 |
+|----------|-------------|-----------------------------|
+| `/`      | GET         | Get all categories          |
+| `/`      | POST        | Create a new category       |
+| `/:id/`  | PUT         | Update an existing category |
+| `/:id/`  | DELETE      | Delete an existing category |
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### OrderController
 
-## Learn More
+| Endpoint          | HTTP Method | Description         |
+|-------------------|-------------|---------------------|
+| `/`               | POST        | Order a product     |
+| `/`               | GET         | Get orders list     |
+| `/:code/`         | GET         | Get an order        |
+| `/:code/:status/` | PUT         | Update order status |
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### ProductController
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+| Endpoint | HTTP Method | Description          |
+|----------|-------------|----------------------|
+| `/`      | GET         | Get products         |
+| `/:id/`  | GET         | Get a product        |
+| `/file/` | POST        | Upload an image      |
+| `/`      | POST        | Create a new product |
+| `/:id/`  | PUT         | Update a product     |
 
-### Code Splitting
+### UserController
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+| Endpoint              | HTTP Method | Description              |
+|-----------------------|-------------|--------------------------|
+| `/login`              | POST        | Log user into the system |
+| `/register`           | POST        | Register a new user      |
+| `/me/`                | GET         | Get current user details |
+| `/:id`                | GET         | Get a user's details     |
+| `/`                   | GET         | Get users                |
+| `/me/`                | PUT         | Update current user      |
+| `/me/credit/:credit/` | PUT         | Change user's credit     |
 
-### Analyzing the Bundle Size
+## Demo
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+| Title         | Screenshot                    |
+|---------------|-------------------------------|
+| Home Page     | <img src="figs/home.png">     |  
+| Register Page | <img src="figs/register.png"> |
+| Profile Page  | <img src="figs/profile.png">  |
 
-### Making a Progressive Web App
+## To Do
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Note that the backend and frontend are not connect to each other. And each can be run as a stand-alone projects. Though
+unprobable, if anyone is intersted in completing the project by glueing the parts together, PR's are welcome and
+appreciated!
 
-### Advanced Configuration
+- [ ] Routing in Frontend
+- [ ] Connecting the Frontend to the Backend
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Contributors
 
-### Deployment
+- [Danial Hamdi](https://github.com/da-nial)
+- [Alex Gholamian](https://github.com/alxgh) (I sincerely thank him for his help with the backend of the project.)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Course Information
 
-### `npm run build` fails to minify
+- **Course**: Information Security
+- **University**: Amirkabir University of Technology
+- **Semester**: Fall 2022
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Let me know if you have any questions!
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)

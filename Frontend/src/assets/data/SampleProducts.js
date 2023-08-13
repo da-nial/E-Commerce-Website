@@ -1,0 +1,163 @@
+import mouse from "../pics/mouse.jpg";
+import camera from "../pics/camera.jpg";
+import alexa from "../pics/alexa.jpg";
+import airpod from "../pics/airpods.jpg";
+import playstation from "../pics/playstation.jpg";
+import sample from "../pics/sample.jpg";
+
+const products = [
+    {
+        name: "موس گیمینگ ریزر",
+        category: "تکنولوژی",
+        price: "۱۰۰۰۰",
+        numInStock: 17,
+        numSold: 8,
+        image: mouse,
+    },
+    {
+        name: "دوربین کنون",
+        category: "تکنولوژی",
+        price: "۲۰۰۰۰",
+        numInStock: 13,
+        numSold: 5,
+        photo: mouse,
+    },
+    {
+        name: "دستیار صوتی الکسا",
+        category: "تکنولوژی",
+        price: "۱۵۰۰۰",
+        numInStock: 5,
+        numSold: 7,
+        photo: mouse,
+    },
+    {
+        name: "ایرپاد اپل",
+        category: "تکنولوژی",
+        price: "۱۰۰۰۰",
+        numInStock: 17,
+        numSold: 8,
+        image: airpod,
+    },
+    {
+        name: "پلی استیشن ۴ سونی",
+        category: "تکنولوژی",
+        price: "۲۰۰۰۰",
+        numInStock: 13,
+        numSold: 5,
+        photo: playstation,
+    },
+    {
+        name: "یک کالای دیگر",
+        category: "تکنولوژی",
+        price: "۱۵۰۰۰",
+        numInStock: 5,
+        numSold: 7,
+        photo: sample,
+    },
+    {
+        name: "موس گیمینگ ریزر",
+        category: "تکنولوژی",
+        price: "۱۰۰۰۰",
+        numInStock: 17,
+        numSold: 8,
+        image: mouse,
+    },
+    {
+        name: "دوربین کنون",
+        category: "تکنولوژی",
+        price: "۲۰۰۰۰",
+        numInStock: 13,
+        numSold: 5,
+        photo: mouse,
+    },
+    {
+        name: "دستیار صوتی الکسا",
+        category: "تکنولوژی",
+        price: "۱۵۰۰۰",
+        numInStock: 5,
+        numSold: 7,
+        photo: alexa,
+    },
+    {
+        name: "ایرپاد اپل",
+        category: "تکنولوژی",
+        price: "۱۰۰۰۰",
+        numInStock: 17,
+        numSold: 8,
+        image: airpod,
+    },
+    {
+        name: "پلی استیشن ۴ سونی",
+        category: "تکنولوژی",
+        price: "۲۰۰۰۰",
+        numInStock: 13,
+        numSold: 5,
+        photo: playstation,
+    },
+    {
+        name: "یک کالای دیگر",
+        category: "تکنولوژی",
+        price: "۱۵۰۰۰",
+        numInStock: 5,
+        numSold: 7,
+        photo: sample,
+    },
+    {
+        name: "موس گیمینگ ریزر",
+        category: "تکنولوژی",
+        price: "۱۰۰۰۰",
+        numInStock: 17,
+        numSold: 8,
+        image: mouse,
+    },
+    {
+        name: "دوربین کنون",
+        category: "تکنولوژی",
+        price: "۲۰۰۰۰",
+        numInStock: 13,
+        numSold: 5,
+        photo: mouse,
+    },
+    {
+        name: "دستیار صوتی الکسا",
+        category: "تکنولوژی",
+        price: "۱۵۰۰۰",
+        numInStock: 5,
+        numSold: 7,
+        photo: mouse,
+    },
+    {
+        name: "ایرپاد اپل",
+        category: "تکنولوژی",
+        price: "۱۰۰۰۰",
+        numInStock: 17,
+        numSold: 8,
+        image: airpod,
+    },
+    {
+        name: "پلی استیشن ۴ سونی",
+        category: "تکنولوژی",
+        price: "۲۰۰۰۰",
+        numInStock: 13,
+        numSold: 5,
+        photo: playstation,
+    },
+    {
+        name: "یک کالای دیگر",
+        category: "تکنولوژی",
+        price: "۱۵۰۰۰",
+        numInStock: 5,
+        numSold: 7,
+        photo: sample,
+    },
+    {
+        name: "یک کالای دیگر",
+        category: "تکنولوژی",
+        price: "۱۵۰۰۰",
+        numInStock: 5,
+        numSold: 7,
+        photo: sample,
+    }
+]
+
+export default products;
