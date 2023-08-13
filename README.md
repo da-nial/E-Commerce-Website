@@ -18,13 +18,10 @@ folder, in Persian.
     - Register and login
 - Admins can
     - manage products, orders, and users
-
-### Backend Tech Stack
-
-- Golang
-- Gin for routing
-- Postgres for data storage
-- JWT for authentication
+- Backend Tech Stack
+    - Golang
+    - gorm to use PostgreSQL
+    - JWT for authentication
 
 ## Running Locally
 
