@@ -91,9 +91,7 @@ From the `frontend` directory:
 
 ## To Do
 
-Note that the backend and frontend are not connect to each other. And each can be run as a stand-alone projects. Though
-unprobable, if anyone is intersted in completing the project by glueing the parts together, PR's are welcome and
-appreciated!
+Note that the backend and frontend are not connected to each other, and each can be run as stand-alone projects. Though improbable, if anyone is interested in completing the project by gluing the parts together, pull requests (PRs) are welcome and appreciated!
 
 - [ ] Routing in Frontend
 - [ ] Connecting the Frontend to the Backend
