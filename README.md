@@ -42,6 +42,14 @@ From the `frontend` directory:
 1. Run `npm install` to install dependencies
 2. Run `npm start` to start the dev server on port 3000
 
+## Demo
+
+| Title         | Screenshot                    |
+|---------------|-------------------------------|
+| Home Page     | <img src="figs/home.png">     |  
+| Register Page | <img src="figs/register.png"> |
+| Profile Page  | <img src="figs/profile.png">  |
+
 ## API Reference
 
 ### CategoryController
@@ -83,14 +91,6 @@ From the `frontend` directory:
 | `/`                   | GET         | Get users                |
 | `/me/`                | PUT         | Update current user      |
 | `/me/credit/:credit/` | PUT         | Change user's credit     |
-
-## Demo
-
-| Title         | Screenshot                    |
-|---------------|-------------------------------|
-| Home Page     | <img src="figs/home.png">     |  
-| Register Page | <img src="figs/register.png"> |
-| Profile Page  | <img src="figs/profile.png">  |
 
 ## To Do
 
